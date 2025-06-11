@@ -41,4 +41,11 @@ public class UserService {
         }
         user.getRoles().add(Role.ADMIN);
     }
+    public User findByUsername(String username) {
+        User user = userStorage.get(username);
+        if (user == null) {
+            throw new IllegalArgumentException("사용자를 찾을 수 없습니다.");
+        }
+        return user;
+    }
 }

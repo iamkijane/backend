@@ -1,5 +1,6 @@
 package org.example.controller;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.example.dto.request.LoginRequest;
 import org.example.dto.response.LoginResponse;
 import org.example.dto.response.SignupResponse;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
+@SecurityRequirement(name = "JWT")
 @RestController
 public class AuthController {
 

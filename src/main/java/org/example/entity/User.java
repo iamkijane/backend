@@ -1,9 +1,11 @@
 package org.example.entity;
 
-import org.example.entity.Role;
+import lombok.Getter;
+
 import java.util.HashSet;
 import java.util.Set;
 
+@Getter
 public class User {
     private static Long idCounter = 1L;
 

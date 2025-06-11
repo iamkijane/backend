@@ -20,6 +20,7 @@ public class SecurityConfig {
                 .formLogin().disable()
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
+                                "/",
                                 "/v3/api-docs/**",
                                 "/swagger-ui/**",
                                 "/swagger-ui.html",

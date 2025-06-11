@@ -44,8 +44,3 @@ java -jar app.jar
 | POST | /login | 로그인(JWT 발급) | No |
 | PATCH | /admin/promote | 관리자 권한 부여 | Yes |
 | GET | /users/me | 내 정보 조회 | Yes | 
-
-## 기타 사항
-DB를 사용하지 않고 ConcurrentHashMap으로 사용자 저장
-패스워드 단순 저장
-관리자 권한은 서버 내부에서 수동으로 부여
